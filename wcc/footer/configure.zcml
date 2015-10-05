@@ -15,6 +15,10 @@
 
     <include package=".behavior"/>
     <include package=".portlet"/>
+    
+    <browser:jbot
+        directory="jbot"
+        layer=".interfaces.IProductSpecific" />
 
     <browser:resourceDirectory 
         name="wcc.footer"
