@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ilo.geoview">
+
+    <browser:viewlet
+        name="plone.belowcontenttitle.documentbyline"
+        for="Products.CMFCore.interfaces.IContentish"
+        class=".document_byline.DocumentByLineViewlet"
+        manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+        layer="..interfaces.IProductSpecific"
+        template="templates/document_byline.pt"
+        permission="zope2.View"
+        />
+
+</configure>
