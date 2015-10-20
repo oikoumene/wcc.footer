@@ -9,6 +9,8 @@ from Products.CMFCore.utils import _checkPermission
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import base_hasattr
 from plone.app.layout.viewlets import ViewletBase
+from Acquisition import aq_inner
+from DateTime import DateTime
 
 
 class DocumentByLineViewlet(ViewletBase):
